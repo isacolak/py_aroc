@@ -1,28 +1,22 @@
 # Python Auto Reload on Change
 
-## Usage
+## Installing
 
-In the following paragraphs, I am going to describe how you can get and use Py_AROC for your own projects.
+Install and update using [pip](https://pip.pypa.io/en/stable/quickstart/):
 
-###  Getting it
-
-To download Py_AROC, either fork this github repo or simply use PyPi via pip.
 ```sh
-$ pip install py_aroc
+pip install py_aroc
 ```
 
-### Using it
-
-Py_AROC was programmed with ease-of-use in mind. First, import Py_AROC:
+### A Simple Example
 
 ```Python
 import py_aroc
-```
 
-And start Py_AROC:
+d = 10
 
-```
-py_aroc.start()
-```
+def main():
+ print(d)
 
-Congratulations, you can now use Py_AROC!
+py_aroc.runWithReloader(main)
+```

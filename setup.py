@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
   name = 'py_aroc',
   packages = ['py_aroc'],
-  version = '0.1',
+  version = '0.2',
   license='MIT',
   description = 'Python Auto Reload on Change',
   long_description=long_description,
@@ -14,16 +14,17 @@ setup(
   author = 'isacolak',
   author_email = 'isacolak04@gmail.com',
   url = 'https://github.com/isacolak/py_aroc',
-  download_url = 'https://github.com/isacolak/py_aroc/archive/py_aroc_v_01.tar.gz',
+  download_url = 'https://github.com/isacolak/py_aroc/archive/py_aroc_v_02.tar.gz',
   keywords = ["auto","reload","change","auto reload", "on change","auto reload on change"],
   install_requires=[
-    'watchgod',
+    'watchdog',
   ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # "3 - Alpha", "4 - Beta", "5 - Production/Stable"
     'Intended Audience :: Developers',
     'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
